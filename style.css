@@ -1,0 +1,157 @@
+* {
+    font-family: 'Special Elite', cursive;
+    padding: 0;
+    margin: 0;
+    color: white;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    user-select: none;
+    /* Standard */
+}
+
+body {
+    background-color: #141414;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+#container2 {
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px black;
+    background-color: #001341;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    width: 50vh;
+}
+
+img {
+    border-radius: 10px;
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+#p {
+    margin: 20px;
+    font-size: large;
+    color: white;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+#i {
+    color: darkgrey;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+
+
+}
+
+#bscreen {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: black;
+    visibility: hidden;
+}
+
+input {
+    color: black;
+    text-align: center;
+}
+
+input::placeholder {
+    text-align: center;
+    padding-top: 5px;
+}
+
+#btn,
+#reload {
+    border: 2px white solid;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+#btn2 {
+    color: black;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: larger;
+    background-color: #f1f6ce;
+    border: none;
+    transition: background .3s;
+}
+
+#btn2:hover {
+    background-color: #b7bb9f;
+}
+
+#c1,
+#c2,
+#c3,
+#c4 {
+    color: black;
+    background-color: hsla(260, 100%, 92%, 0.801);
+    border: none;
+    outline: none;
+    padding: 5px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: background .3s;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    display: flex;
+}
+
+#c1:hover,
+#c2:hover,
+#c3:hover,
+#c4:hover {
+    background-color: #bfa8c4;
+}
+
+#gameover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    visibility: hidden;
+    position: absolute;
+
+}
+
+#choices {
+    display: grid;
+    grid-template-areas: "c1 c2 c3 c4";
+}
